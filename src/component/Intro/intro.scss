@@ -1,0 +1,206 @@
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #284283;
+    padding: 10px;
+    
+    .firstColumn{
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+        @media screen and (max-width: 900px){
+            align-items: center;
+            margin-right: 0px;
+            margin-top:300px;
+        }
+        .introTitle{
+            font-family: Poppins;
+            font-style: normal;
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 37px;
+            color: #FFFFFF;
+            b{
+                color:#FC7900;
+            }
+        }
+        .rowIntroAnimate{
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            justify-content: center;
+            .introAnimate{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                text-align: center;
+                font-size: 23px;
+                line-height: 37px;
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
+            .icon{
+                font-size: 23px;
+                color: #FFFFFF;
+            }
+        }
+        
+        .introDescription{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+        .introButton{
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .hireMe{
+                padding: 10px;
+                background: #FC7900;
+                border: 1px solid #FC7900;
+                box-sizing: border-box;
+                border-radius: 10px;
+                color:#FFFFFF;
+                font-size: 15px;
+                cursor: pointer;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            .downloadCv{
+                padding: 10px;
+                background: #284283;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 10px;
+                cursor: pointer;
+                color:#FFFFFF;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    .secondColumn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+        .circleTop{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            right: 100px;
+            top: 100px;
+            background: rgba(252, 121, 0, 0.62); 
+            // -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
+	        // -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
+	        // box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);   
+            &.x1{
+                    // -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+                    // -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+                    // animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+                    // left: 65%;
+                    // top: 70%;
+                    // -webkit-transform: scale(0.6);
+                    // -moz-transform: scale(0.6);
+                    // transform: scale(0.6);
+            }
+            @media screen and (max-width: 900px){
+                right: 10%;
+                top: 15%;
+            }
+        }
+        .introImage{
+            position: absolute;
+            width: 200px;
+            border-radius: 10px;
+            object-fit: contain;
+            top: 150px;
+            right: 150px;
+            @media screen and (max-width: 900px){
+                right: 22%;
+                top: 23%;
+            }
+        }
+        .circleBottom{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            right: 300px;
+            top: 260px;
+            background: rgba(252, 121, 0, 0.62); 
+            // -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
+	        // -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
+	        // box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);      
+            @media screen and (max-width: 900px){
+                right: 62%;
+                top: 40%;
+            }
+        }
+    }
+    @-webkit-keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+    
+    @-moz-keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+    
+    @keyframes animateBubble {
+        0% {
+            margin-top: 1000px;
+        }
+        100% {
+            margin-top: -100%;
+        }
+    }
+    
+    @-webkit-keyframes sideWays { 
+        0% { 
+            margin-left:0px;
+        }
+        100% { 
+            margin-left:50px;
+        }
+    }
+    
+    @-moz-keyframes sideWays { 
+        0% { 
+            margin-left:0px;
+        }
+        100% { 
+            margin-left:50px;
+        }
+    }
+    
+    @keyframes sideWays { 
+        0% { 
+            margin-left:0px;
+        }
+        100% { 
+            margin-left:50px;
+        }
+    }
+}

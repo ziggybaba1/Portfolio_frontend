@@ -1,0 +1,98 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+   .rowNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #284283;
+    padding: 5px;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logoTitle{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 20px;      
+            color: #FFFFFF;
+            @media screen and (max-width: 900px){
+                font-size: 18px;
+                margin-right: 50px;
+            }
+            // @media screen and (max-width: 900px) and (min-width: 900px){
+            //     font-size: 18px;
+            //     margin-right: 40px;
+            // }
+        }
+        .mobNav{
+            display: none;
+            @media screen and (max-width: 900px){
+                display: flex;
+                margin-right: 30px;
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100vw/2.8);
+        @media screen and (max-width: 900px){
+           display: none;
+        }
+        a{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FFFFFF;
+            &.active{
+                color: #FC7900;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        .icon{
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-left: 10px;
+            }
+        }
+    }
+    .mobileMenu{
+        display: none;
+        @media screen and (max-width: 900px){
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: calc(100vh/5);
+        background-color: #284283;
+        padding-bottom: 15px;
+        a{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FFFFFF;
+            &.active{
+                color: #FC7900;
+            }
+        }
+        }
+    }
+}

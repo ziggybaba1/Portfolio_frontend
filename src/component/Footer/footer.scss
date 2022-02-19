@@ -1,0 +1,85 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #284283;
+    padding: 20px;
+    // @media screen and (max-width: 900px){
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    .clientContainer{
+        display: flex;
+        flex-direction: column;
+       
+        .clientTitle{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 37px;
+            color: #FFFFFF;
+            @media screen and (max-width: 900px){
+            font-size:15px;
+            margin-top: 10px;
+            }
+        }
+        .clientContent{
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            // width: 300px;
+            @media screen and (max-width: 900px){
+                width: 100%;
+               }
+                .clientLogo{
+                    height: 30px;
+                    object-fit: contain;
+                    margin: 5px;
+                }
+                .icon{
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+                input{
+                   border: none;
+                   width: 100%;
+                   height: 25px;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    @media screen and (max-width: 900px){
+                        margin: 5px 20px 5px 20px;
+                    }
+                }
+                textarea{
+                    border: none;
+                   width: 100%;
+                //    height: 25px;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    @media screen and (max-width: 900px){
+                        margin: 5px 20px 5px 20px;
+                    }
+                }
+                .submit{
+                    padding: 10px;
+                    background: #FC7900;
+                    border: 1px solid #FC7900;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    color:#FFFFFF;
+                    font-size: 15px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    @media screen and (max-width: 900px){
+                        margin: 5px 20px 5px 20px;
+                    }
+                }
+        }
+    }
+}

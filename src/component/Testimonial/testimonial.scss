@@ -1,0 +1,106 @@
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    .titleContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+        }
+        .line{
+            background-color: #FC7900;
+            width: 277px;
+            height: 9px;
+        }
+    }
+    .rowContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 316px;
+        margin-top: 35px;
+        background: linear-gradient(0deg, rgba(252, 121, 0, 0.25), rgba(252, 121, 0, 0.25)),
+        url('testimonial.png');
+        padding: 40px 0px 40px 0px;
+        @media screen and (max-width: 900px){
+            padding: 40px 0px 40px 0px;
+        }
+        .icon{
+            font-size: 50px;
+            color: white;
+        }
+        .scrollTestimonial{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: space-evenly;
+            width:calc(100vw/1.3);
+            overflow-x:scroll;
+            
+            .cardTestimonial{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                // width: 400px;
+                padding: 20px;
+                border-radius: 10px;
+                margin-right: 20px;
+               
+                .textTestifier{
+                    font-family: Poppins;
+                    width: 200px;
+                    font-style: italic;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: black;
+                }
+                .rowTitle{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                    .image{
+                        width: 70px;
+                        border-radius: 50%;
+                    }
+                    .headerContainer{
+                        display: flex;
+                        flex-direction: column;
+                        .name{
+                            font-family: Poppins;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 19px;
+                            color: #000000;
+                        }
+                        .workplace{
+                            font-family: Poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 19px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
