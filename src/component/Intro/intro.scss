@@ -1,10 +1,18 @@
 .intro{
     display: flex;
+    flex-direction: column;
+    
+    .introContent{
+        display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     background: #284283;
     padding: 10px;
+    @media screen and (max-width: 900px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
     .firstColumn{
         display: flex;
@@ -13,7 +21,7 @@
         @media screen and (max-width: 900px){
             align-items: center;
             margin-right: 0px;
-            margin-top:300px;
+            // margin-top:300px;
         }
         .introTitle{
             font-family: Poppins;
@@ -33,6 +41,16 @@
             flex-direction: row;
             align-items: center; 
             justify-content: center;
+            strong{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                text-align: center;
+                font-size: 23px;
+                line-height: 37px;
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
             .introAnimate{
                 font-family: Poppins;
                 font-style: normal;
@@ -42,6 +60,11 @@
                 line-height: 37px;
                 color: #FFFFFF;
                 margin-right: 5px;
+                &::before {
+                    content: "A Full Stack Developer";
+                    animation: animate infinite 10s;
+                    padding-left: 10px;
+                }
             }
             .icon{
                 font-size: 23px;
@@ -66,6 +89,7 @@
             margin-top: 20px;
             margin-bottom: 20px;
             .hireMe{
+                text-decoration: none;
                 padding: 10px;
                 background: #FC7900;
                 border: 1px solid #FC7900;
@@ -78,6 +102,7 @@
                 margin-right: 10px;
             }
             .downloadCv{
+                text-decoration: none;
                 padding: 10px;
                 background: #284283;
                 border: 1px solid #FFFFFF;
@@ -94,14 +119,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 280px;
+        // height: 280px;
+        background: #fff;
+        border-radius: 10px;
+        padding:2px;
+        margin-bottom: 10px;
         .circleTop{
             position: absolute;
             width: 100px;
             height: 100px;
             border-radius: 50%;
             right: 100px;
-            top: 100px;
+            // top: 20px;
             background: rgba(252, 121, 0, 0.62); 
             // -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
 	        // -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.3);
@@ -122,15 +151,16 @@
             }
         }
         .introImage{
-            position: absolute;
+            position: relative;
             width: 200px;
+            // height: 200px;
             border-radius: 10px;
             object-fit: contain;
-            top: 150px;
-            right: 150px;
+           
+            // right: 150px;
             @media screen and (max-width: 900px){
-                right: 22%;
-                top: 23%;
+                // right: 22%;
+                // top: 23%;
             }
         }
         .circleBottom{
@@ -150,57 +180,28 @@
             }
         }
     }
-    @-webkit-keyframes animateBubble {
+    @keyframes animate {
+  
         0% {
-            margin-top: 1000px;
+            content: "A Mobile Developer";
+           
         }
-        100% {
-            margin-top: -100%;
+        35% {
+            content: "A Web Developer";
+           
         }
-    }
-    
-    @-moz-keyframes animateBubble {
-        0% {
-            margin-top: 1000px;
+
+        50% {
+            content: "A DevOp Developer";
+           
         }
-        100% {
-            margin-top: -100%;
-        }
-    }
-    
-    @keyframes animateBubble {
-        0% {
-            margin-top: 1000px;
-        }
-        100% {
-            margin-top: -100%;
+
+        75% {
+            content: "Scrum Master";
+           
         }
     }
-    
-    @-webkit-keyframes sideWays { 
-        0% { 
-            margin-left:0px;
-        }
-        100% { 
-            margin-left:50px;
-        }
-    }
-    
-    @-moz-keyframes sideWays { 
-        0% { 
-            margin-left:0px;
-        }
-        100% { 
-            margin-left:50px;
-        }
-    }
-    
-    @keyframes sideWays { 
-        0% { 
-            margin-left:0px;
-        }
-        100% { 
-            margin-left:50px;
-        }
+
+   
     }
 }

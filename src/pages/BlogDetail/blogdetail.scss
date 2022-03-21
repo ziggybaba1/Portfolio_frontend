@@ -1,0 +1,168 @@
+.blogdetail{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    .rowContainer{
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: 900px){
+            flex-direction: column;
+        }
+        .leftContainer{
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+            margin-right: 150px;
+            .detailImage{
+                width: 650px;
+                object-fit:cover;
+                @media screen and (max-width: 900px){
+                    width: calc(100vw/1.1);
+                }
+            }
+            .detailTitle{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #000000;
+                @media screen and (max-width: 900px){
+                    width: calc(100vw/1.1);
+                }
+            }
+            .detailContent{
+                img {
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                }
+                @media screen and (max-width: 900px){
+                    width: calc(100vw/1.2);
+                }
+            }
+            .shareContainer{
+                display: flex;
+                flex-direction: row; 
+                .shareText{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 43px;      
+                    color: #000000;
+                    margin:5px;
+                }
+                .button{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 50%;
+                    padding: 5px;
+                    border: none;
+                    margin:5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .rightContainer{
+            display: flex;
+            flex-direction: column;
+           
+            @media screen and (max-width: 900px){
+                align-items: center;
+            justify-content: center;
+            }
+            .blogTitle{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 43px;      
+                color: #000000;
+            }
+            .rowItem{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                width: calc(100vw/1.2);
+                .columnItem{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    // justify-content: center;
+                    .postImage{
+                        width: 284px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 10px 10px 0px 0px;
+                        border: none;
+                    }
+                    .content{
+                        display: flex;
+                        flex-direction: column;
+                        width: 260px;
+                        background: #FFFFFF;
+                        padding:10px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                       a{
+                           text-decoration: none;
+                           color: #000000;
+                        .itemTitle{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin:5px;
+                        }
+                       }
+                        
+                        .description{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin:5px;
+                        }
+                        .postHolder{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin:5px;
+                            .titleCard{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                background: #FC7900;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                .textCard{
+                                    font-family: Montserrat;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

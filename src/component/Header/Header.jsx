@@ -1,6 +1,7 @@
 import React from 'react';
 import "./header.scss";
 import {LinkedIn,Google,Twitter,Dehaze} from "@mui/icons-material"
+import {Link} from "react-router-dom";
 
 var show="none";
 function Header(props) {
@@ -17,24 +18,26 @@ function Header(props) {
               
             </div>
             <div className="menu">
-                <a className='active'>Home</a>
-                <a>AboutMe</a>
-                <a>LatestWork</a>
-                <a>Testimonial</a>
-                <a>ContactMe</a>
+                <Link to="/" className={props.menu==="home"?'active':''}>Home</Link>
+                <a href="#about" className={props.menu==="about"?'active':''}>AboutMe</a>
+                <a href="#work" className={props.menu==="work"?'active':''}>LatestWork</a>
+                <a href="#testimony" className={props.menu==="testimony"?'active':''}>Testimonial</a>
+                <Link to="/contactme" className={props.menu==="contact"?'active':''}>ContactMe</Link>
+                <a href='#activities' className={props.menu==="activities"?'active':''}>Activities</a>
             </div>
             <div className="social">
-                <LinkedIn className='icon' />
-                <Google  className='icon'/>
-                <Twitter className='icon' />
+            <a target="_blank" href='https://www.linkedin.com/in/seyi-adejugbagbe-2a0512114/'><LinkedIn className='icon' /></a>
+                <a target="_blank" href='mailto:seyiadejugbagbe@gmail.com'><Google  className='icon'/></a>
+                <a target="_blank" href='https://twitter.com/seyiadejugbagbe?lang=en'><Twitter className='icon' /></a>
             </div>
         </div>
         <div id="mobileMenu" className="mobileMenu">
-                <a className='active'>Home</a>
-                <a>AboutMe</a>
-                <a>LatestWork</a>
-                <a>Testimonial</a>
-                <a>ContactMe</a>    
+        <Link to="/" className={props.menu==="home"?'active':''}>Home</Link>
+                <a href="#about" className={props.menu==="about"?'active':''}>AboutMe</a>
+                <a href="#work" className={props.menu==="work"?'active':''}>LatestWork</a>
+                <a href="#testimony" className={props.menu==="testimony"?'active':''}>Testimonial</a>
+                <Link to="/contactme" className={props.menu==="contact"?'active':''}>ContactMe</Link>
+                <a href='#activities' className={props.menu==="activities"?'active':''}>Activities</a>
         </div>
     </div>
     );

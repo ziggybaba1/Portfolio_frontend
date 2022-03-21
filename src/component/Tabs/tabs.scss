@@ -1,0 +1,86 @@
+.tabs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+    // align-items: center;
+        // justify-content:center;
+        @media screen and (max-width: 900px){
+            margin-left: 0px;
+            } 
+    .tabContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        ul{
+            display: flex;
+            flex-direction: column;
+           
+            @media screen and (max-width: 900px){
+            padding-inline-start: 10px;
+            }
+            // align-items: center;
+            // justify-content: space-around;
+            // height: calc(100vh/2);
+          
+            .menu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                // justify-content: center;
+                .items{
+                    display: flex;
+                    flex-direction: row;
+                    border: none;
+                    text-decoration: none;
+                    background: #284283;
+                    padding: 10px;
+                    // @media screen and (max-width: 900px){
+                       &.active{
+                        background: #FC7900;
+                        padding: 9px;
+                        border-style: solid;
+                        border-color: #284283;
+                       }
+                       
+                    //  }
+                    .itemIcon{
+                        color: white;
+                        font-size: 40px;
+                        cursor: pointer;
+                        // @media screen and (max-width: 900px){
+                            &.active{
+                                color: #000000; 
+                            }
+                        // }
+                    }
+                    
+                }
+                strong{
+                    color: white;
+                    font-size: 18px;
+                    &.active{
+                        background: #FC7900;
+                        padding: 10px;
+                    }
+                    @media screen and (max-width: 900px){
+                       display: none;
+                    }
+                }
+            }
+        }
+
+    }
+    .contentContainer{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        // align-items: center;
+        // width: 350px;
+        // height: 500px;
+        // box-sizing: border-box;
+        // padding: 40px;
+        // background-color: #ecf0f3;
+        // box-shadow: 14px 14px 20px #cbced1,-14px -14px 20px white;
+    }
+}

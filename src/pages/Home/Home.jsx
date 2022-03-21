@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { About, Blog, Footer, Header, Intro, Testimonial, Work } from '../../component';
 import "./home.scss";
+import axios from "axios";
+import { baseUrl } from '../../env';
 
 const Home = () => {
+   
+
     return (
         <div className='home'>
-            <Header />
+            <Header menu="home"/>
             <Intro />
             <About />
-            <Work />
-            <Testimonial />
+            <Work header={true}/>
+            <Testimonial  />
             <Blog />
             <Footer />
         </div>

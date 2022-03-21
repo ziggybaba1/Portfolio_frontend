@@ -1,10 +1,11 @@
 import { Circle } from '@mui/icons-material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./about.scss";
 
 function About(props) {
     return (
-        <div className='about'>
+        <div id="about" className='about'>
             <div className="titleContainer">
                 <h4 className="title">About Me</h4>
                 <div className="line"></div>
@@ -14,41 +15,46 @@ function About(props) {
                     <img src="/img/professional.png" alt="" className="aboutImage" />
                 </div>
                 <div className="descriptionCard">
-                    <span className="description">
-                    Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization
+                    <span className="descriptionAbout">
+                    Experienced Scrum master with a keen ability to understand and build complex systems. I have excellent design & coding skills, as well as an ability convert client requirements into exciting online applications. I love spending time on fixing little details and optimizing web/mobile apps.
+                    I understand the needs and goals of the organization/individual and can find ways to help them realize their objectives more efficiently. I care for your time and mine also. I'm flexible enough to adjust in your requirements ensuring you the quality work
                     </span>
-                    <span className="description">Here are a Few Highlights:</span>
-                <div className="itemContainer">
+                    <span className="descriptionAbout">Here are a Few Highlights:</span>
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">Full Stack web and mobile development</span>
+                    <span className="descriptionAbout">Full Stack web and mobile development</span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">Interactive Front End design</span>
+                    <span className="descriptionAbout">Interactive Front End design HTML5, CSS, Javascript, jQuery</span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">React and React Native</span>
+                    <span className="descriptionAbout">React and React Native</span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">PHP and Laravel </span>
+                    <span className="descriptionAbout">PHP and Laravel </span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">Redux for State Mnanagement</span>
+                    <span className="descriptionAbout">Node and Express </span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">Building REST API</span>
+                    <span className="descriptionAbout">Redux for State Mnanagement</span>
                 </div>
-                <div className="itemContainer">
+                <div className="itemContainerAbout">
                     <Circle className='icon' />
-                    <span className="description">Database Management</span>
+                    <span className="descriptionAbout">Building REST API</span>
+                </div>
+                <div className="itemContainerAbout">
+                    <Circle className='icon' />
+                    <span className="descriptionAbout">Database Management MySql, MongoDB, Sql, </span>
                 </div>
                 <div className="actionButtonsRow">
-                <button className="hireMe">Hire Me</button>
-                <button className="downloadCv">Get Resume</button>
+                <Link to="/contactme" className="hireMe">Hire Me</Link>
+            <a href="mailto:contact@seyiadejugbagbe.com" className="downloadCv">Contact me</a>
                 </div>
                 </div>
             </div>

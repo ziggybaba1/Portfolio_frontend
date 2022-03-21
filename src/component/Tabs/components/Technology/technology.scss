@@ -1,0 +1,45 @@
+.technology{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // width: calc(100vw/2.8);
+    // @media screen and (max-width: 900px){
+    //     width: calc(100vw/1.2);
+    // }
+    .mobTitle{
+        // display: none;
+        // @media screen and (max-width: 900px){
+         display: flex;
+         font-family: Poppins;
+          font-style: normal;
+          font-weight: bold;
+          display: block;
+          font-size: 15px;
+          line-height: 22px;
+          color: #284283;
+    //   }  
+      }
+    .itemContainerTechnology{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        // justify-content: center;
+        .sourceTech{
+            width: 70px;
+            object-fit: contain;
+        }
+        .techName{
+            font-family: Montserrat;
+            font-style: normal;
+            display: block;
+            font-weight:500;
+            font-size: 15px;
+            line-height: 20px;
+            color: #000000;
+            margin:5px;
+            width: 100px;
+        }
+    }
+}

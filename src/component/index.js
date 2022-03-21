@@ -5,6 +5,7 @@ import Work from "./Work/Work";
 import Testimonial from "./Testimonial/Testimonial";
 import Footer from "./Footer/Footer";
 import Blog from "./Blog/Blog";
+import Tabs from "./Tabs/Tabs";
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     Work,
     Testimonial,
     Footer,
-    Blog
+    Blog,
+    Tabs
 }
